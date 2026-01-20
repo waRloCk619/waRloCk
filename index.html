@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARLOCK | Agent Dossier</title>
+    <meta name="description" content="Portfolio of Warlock - Technical Architect, Full-Stack Developer, and Gamer.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="cyber-grid"></div>
+    <div class="vignette"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Warlock Logo" class="logo">
+            <span class="logo-text">WARLOCK</span>
+        </div>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><button class="nav-btn active" data-target="home">HOME</button></li>
+            <li><button class="nav-btn" data-target="about">ABOUT</button></li>
+            <li><button class="nav-btn" data-target="contact">CONTACT US</button></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+
+        <!-- HOME SECTION -->
+        <section id="home" class="tab-content active">
+            <div class="hero-container">
+                <div class="glitch-wrapper">
+                    <h1 class="main-heading glitch" data-text="I AM WARLOCK">I AM WARLOCK</h1>
+                </div>
+                <h2 class="sub-heading">Technical Architect <span class="accent">|</span> Full-Stack Developer <span
+                        class="accent">|</span> Strategic Thinker</h2>
+
+                <p class="mission-text">
+                    "In the server and in the code, <span class="highlight">precision is everything</span>. I build
+                    high-performance applications with the same tactical mindset I bring to a 1v5 clutch. No lag. No
+                    bugs. Just pure execution."
+                </p>
+
+                <div class="cta-group">
+                    <button class="metallic-btn" onclick="switchTab('about')">VIEW INTELLIGENCE</button>
+                    <button class="metallic-btn secondary" onclick="switchTab('contact')">INITIATE CONTACT</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="tab-content">
+            <div class="section-header">
+                <h2>AGENT DOSSIER</h2>
+                <div class="decorative-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="card persona-card">
+                    <h3>BEHIND THE MASK</h3>
+                    <p>By day, I’m a developer focused on building scalable systems with Python, Django, and Redis. By
+                        night, you’ll find me on the Ascent or Haven maps, perfecting my utility.</p>
+                    <p>I believe that the best software is like a well-executed site take: it requires a solid plan, the
+                        right tools, and lightning-fast reflexes.</p>
+                </div>
+
+                <div class="card philosophy-card">
+                    <h3>WHY 'WARLOCK'?</h3>
+                    <p>A Warlock masters hidden forces to achieve the impossible. In the tech world, that means digging
+                        into the documentation, mastering the "magic" of low-latency systems, and turning complex
+                        problems into elegant solutions.</p>
+                </div>
+
+                <div class="card skills-card full-width">
+                    <h3>LOADOUT & ABILITIES</h3>
+                    <div class="skill-item">
+                        <span class="skill-label">Primary Weapon</span>
+                        <span class="skill-value">Python & Django (Robust Backend Architecture)</span>
+                        <div class="progress-bar">
+                            <div class="fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Tactical Utility</span>
+                        <span class="skill-value">Git, VS Code, & Docker</span>
+                        <div class="progress-bar">
+                            <div class="fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Passive Buffs</span>
+                        <span class="skill-value">Problem Solving, System Design, & Hardware Tinkering</span>
+                        <div class="progress-bar">
+                            <div class="fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="tab-content">
+            <div class="section-header">
+                <h2>SECURE COMMS</h2>
+                <div class="decorative-line"></div>
+            </div>
+
+            <div class="contact-container">
+                <p class="status-indicator">STATUS: <span class="blink">READY FOR THE NEXT ROUND</span></p>
+
+                <form class="cyber-form" onsubmit="event.preventDefault(); alert('Transmission Sent.');">
+                    <div class="form-group">
+                        <label>CODENAME</label>
+                        <input type="text" placeholder="ENTER IDENTIFIER" required>
+                    </div>
+                    <div class="form-group">
+                        <label>FREQUENCY (EMAIL)</label>
+                        <input type="email" placeholder="ENTER FREQUENCY" required>
+                    </div>
+                    <div class="form-group">
+                        <label>MESSAGE</label>
+                        <textarea placeholder="ENTER TRANSMISSION DATA..." required></textarea>
+                    </div>
+                    <button type="submit" class="metallic-btn">SEND TRANSMISSION</button>
+                </form>
+
+                <div class="social-links">
+                    <h3>LINK UPLINKS</h3>
+                    <div class="links-row">
+                        <a href="#" class="social-btn">GITHUB</a>
+                        <a href="#" class="social-btn">LINKEDIN</a>
+                        <a href="#" class="social-btn">DISCORD</a>
+                        <a href="#" class="social-btn">TRACKER.GG</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 WARLOCK SYSTEMS. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
